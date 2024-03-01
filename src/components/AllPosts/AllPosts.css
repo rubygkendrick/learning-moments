@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(248, 231, 233);
+}
+
+.AllPosts-container-post {
+
+    background-color: pink;
+    border: 1px solid var(--outline);
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.AllPosts-container {
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 5rem 0rem 5rem;
+}
+
+.AllPosts-container-post-info {
+
+    padding: 0.7rem;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.AllPosts-container-filterBar {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+select {
+    background-color: rgb(248, 231, 233);
+    border: none;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    font-size: 1rem;
+
+}
+
+.AllPosts-container-post-topics {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid black;
+    background-color: rgb(248, 231, 233);
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+
+
+
+}
+
+.AllPosts-container-post-showAll {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    background-color: pink;
+    border-radius: 0.25rem;
+    margin-right: auto;
+    margin-left: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    flex-basis: 20%;
+
+
+}
+
+.AllPosts-container-post-search {
+    padding: 0.375rem 0.75rem;
+    border: 1px solid black;
+    background-color: rgb(248, 231, 233);
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    outline: none;
+
+}
