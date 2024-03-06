@@ -15,7 +15,7 @@ export const AllPostsFilterBar = ({ setSearchTerm, setSelectedTopic, allTopics }
             </div>
             <div className="AllPosts-container-post-showAll">
                 <button onClick={(event) => { setSelectedTopic(event.target.value) }}
-                    value="0" className="showAllBtn">Show All</button>
+                    defaultValue="0" className="showAllBtn">Show All</button>
             </div>
             <div className="AllPosts-container-post-search">
                 <input onChange={(event) => { setSearchTerm(event.target.value) }}

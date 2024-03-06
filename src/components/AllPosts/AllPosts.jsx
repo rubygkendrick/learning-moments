@@ -3,6 +3,8 @@ import "./AllPosts.css"
 import { getAllPosts, getAllTopics } from "../../services/AllPostService"
 import { useEffect } from "react"
 import { AllPostsFilterBar } from "./AllPostsFilterBar"
+import { Link } from "react-router-dom"
+
 
 
 export const AllPosts = () => {
@@ -11,6 +13,8 @@ export const AllPosts = () => {
     const [filteredPosts, setFilteredPosts] = useState([])
     const [selectedTopic, setSelectedTopic] = useState("")
     const [searchTerm, setSearchTerm] = useState("")
+
+  
 
     const fetchAndResetAllPosts = () => {
         getAllPosts().then(allPostsArray => {
@@ -37,7 +41,7 @@ export const AllPosts = () => {
         setFilteredPosts(topicRelevantPosts)
     }, [allPosts, selectedTopic])
 
-    
+
     useEffect(() => {
         const searchedPosts = allPosts.filter(post =>
             post.title.includes(searchTerm) ||
@@ -51,16 +55,19 @@ export const AllPosts = () => {
     return (
         <div className="AllPosts-container">
             <AllPostsFilterBar setSelectedTopic={setSelectedTopic}
-                setSearchTerm={setSearchTerm} allTopics={allTopics}/>
+                setSearchTerm={setSearchTerm} allTopics={allTopics} />
             {filteredPosts.map(postObject => {
                 return (
                     <div className="AllPosts-container-post" key={postObject.id}>
                         <div className="AllPosts-container-post-info">
-                            Title : {postObject.title}</div>
+                           <Link to={`/postDetails/${postObject.id}`}> Title : {postObject.title}</Link>
+                        </div>
                         <div className="AllPosts-container-post-info">
-                            Topic : {postObject.topic.name}</div>
+                            Topic : {postObject.topic.name}
+                        </div>
                         <div className="AllPosts-container-post-info">
-                            Likes : {postObject.postLikes.length} </div>
+                            Likes : {postObject.postLikes.length}
+                        </div>
                     </div>
                 )
             })}

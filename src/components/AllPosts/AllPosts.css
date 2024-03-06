@@ -103,3 +103,67 @@ input {
     outline: none;
 
 }
+
+
+
+.postDetail {
+   
+    padding: 1rem;
+   
+  }
+  
+  section.postDetail {
+    margin: 3rem;
+    
+  }
+  
+  .postDetail-info {
+    color: var(--info);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .postDetail-container {
+    background-color: pink;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .postDetail-header {
+    font-size: larger;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--primary);
+  }
+
+  .postDetail-info-italic {
+    font-style: italic;
+  }
+
+ .postDetails-btn {
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid black;
+    background-color: pink;
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+    font-family: "Roboto", sans-serif;
+    flex-basis: 20%;
+    
+ }
+
+ .postDetail-btn-container{
+    display: flex;
+    justify-content: end;
+ }
+
+ .postDetail-title {
+    font-family: "Roboto", sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 30px;
+ }
+
+

@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: var(--dark);
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    padding: 0.5rem;
+    background-color: pink;
+    border: 1px solid black;
+    align-items: center;
+  }
+
+  .navbar-item {
+    flex-basis: 20%;
+    list-style-type: none;
+    text-align: center;
+    color: var(--offWhite);
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    color: black;
+  }
+
+  .navbar-logout {
+    margin-left: auto;
+  }
+
+  .navbar-link:hover {
+    color: rgb(253, 233, 236);
+  }
