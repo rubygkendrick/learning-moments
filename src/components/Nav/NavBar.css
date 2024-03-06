@@ -34,3 +34,17 @@
   .navbar-link:hover {
     color: rgb(253, 233, 236);
   }
+
+  .logout-profile-container{
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-item-nested{
+   font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    margin: .5rem;
+    color: black;
+    margin-right: 6rem;
+  }

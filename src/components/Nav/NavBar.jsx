@@ -13,22 +13,27 @@ export const NavBar = () => {
             <li className="navbar-item">
                 <Link to="/newPost" className="navbar-link">New Post</Link>
             </li>
-            {localStorage.getItem("learning_user") ? (
-                <li className="navbar-item navbar-logout">
-                    <Link
-                        to=""
-                        className="navbar-link"
-                        onClick={() => {
-                            localStorage.removeItem("learning_user")
-                            navigate("/login", { replace: true })
-                        }}
-                    >
-                        Logout
-                    </Link>
+            <div className="logout-profile-container">
+                <li className="navbar-item-nested">
+                    <Link to="/profile/:profileId" className="navbar-link"> Profile </Link>
                 </li>
-            ) : (
-                ""
-            )}
+                {localStorage.getItem("learning_user") ? (
+                    <li className="navbar-item-nested">
+                        <Link
+                            to=""
+                            className="navbar-link"
+                            onClick={() => {
+                                localStorage.removeItem("learning_user")
+                                navigate("/login", { replace: true })
+                            }}
+                        >
+                            Logout
+                        </Link>
+                    </li>
+                ) : (
+                    ""
+                )}
+            </div>
 
         </ul>
     )

@@ -1,0 +1,29 @@
+.profile-container {    
+    display: flex;
+    flex-direction: column;   
+}
+
+.profile-item {
+    padding: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.profile-btn{
+    padding: 0.75rem 1rem;
+    margin: 1rem 4rem 1rem 4rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: pink;
+    border-radius: .5rem;
+    font-family: "Roboto", sans-serif;
+    flex-basis: 20%;
+    align-self: flex-end;
+}
+
+.profile-body{
+    background-color: pink;
+    margin: 4rem 4rem 1rem 4rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}

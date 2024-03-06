@@ -59,8 +59,8 @@ export const AllPosts = () => {
             {filteredPosts.map(postObject => {
                 return (
                     <div className="AllPosts-container-post" key={postObject.id}>
-                        <div className="AllPosts-container-post-info">
-                           <Link to={`/postDetails/${postObject.id}`}> Title : {postObject.title}</Link>
+                        <div className="AllPosts-container-post-info ">
+                           <Link to={`/postDetails/${postObject.id}`} className="title-link"> Title : {postObject.title}</Link>
                         </div>
                         <div className="AllPosts-container-post-info">
                             Topic : {postObject.topic.name}

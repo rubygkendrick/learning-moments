@@ -104,7 +104,16 @@ input {
 
 }
 
+.title-link {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    color: black;
+  }
 
+  .title-link:hover {
+    color: rgb(253, 233, 236);
+  }
 
 .postDetail {
    
