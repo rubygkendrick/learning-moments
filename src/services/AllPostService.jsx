@@ -31,3 +31,14 @@ export const deleteLike = (likeId) => {
         },
     })
 }
+
+export const postNewPost = (object) => {
+    return fetch(`http://localhost:8088/posts`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+
+        },
+        body: JSON.stringify(object),
+    })
+}
